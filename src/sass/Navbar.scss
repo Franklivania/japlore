@@ -9,7 +9,7 @@ $color-text: #FFFFFF;
 $font-main: 'Inter', sans-serif;
 $sub-font: 'Poppins', sans-serif;
 
-header{
+.navs{
     display: flex; 
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@ header{
             li{
                 margin: 0 0.5rem;
 
-                a{
+                .link{
                     color: $color-text;
                     text-decoration: none;
                 }

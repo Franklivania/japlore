@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../sass/App.scss'
 import '../sass/Navbar.scss'
 
@@ -10,18 +11,18 @@ const Navbar = () => {
 
             <nav className='center-nav'>
                 <ul className="navbar">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Contact</a></li>
-                    <li><a href="/">List a property</a></li>
-                    <li><a href="/">Categories</a></li>
+                    <li><Link to='/' className='link'> Home </Link></li>
+                    <li><Link to='/' className='link'> About </Link></li>
+                    <li><Link to='/' className='link'> Contact </Link></li>
+                    <li><Link to='/' className='link'> List a property </Link></li>
+                    <li><Link to='/' className='link'> Categories </Link></li>
                 </ul>
             </nav>
 
             <nav className="end-nav">
                 <ul className="navbar">
-                    <li><a href="/" id='login'>Login</a></li>
-                    <li><a href="/" id='signup'>Sign Up</a></li>
+                    <li><Link to='/' className='link' id='login'> Login </Link></li>
+                    <li><Link to='/' className='link' id='signup'> Sign Up </Link></li>
                 </ul>
             </nav>
         </header>
