@@ -78,7 +78,8 @@ $sub-font: 'Poppins', sans-serif;
         width: 70%;
         display: flex;
         justify-content: space-around;
-        margin-top: 35%;
+        margin-top: 33%;
+        margin-left: 3%;
 
         .container{
             display: flex;
@@ -116,5 +117,10 @@ $sub-font: 'Poppins', sans-serif;
             font-family: $sub-font;
         }
 
+    }
+
+    i{
+        color: $color-text;
+        margin: 2rem 0 0 50%;
     }
 }

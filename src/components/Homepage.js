@@ -64,6 +64,8 @@ const Homepage = () => {
 
             <input type="submit" value="SEARCH" id='search' />
         </div>
+
+        <i class="fa-solid fa-arrow-down fa-3x"></i>
     </div>
   )
 }
