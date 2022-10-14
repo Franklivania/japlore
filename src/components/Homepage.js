@@ -46,6 +46,9 @@ const Homepage = () => {
                 <select name="city" id="city">
                     <option value="select">Select City</option>
                     <option value="select">Tokyo</option>
+                    <option value="select">Nagasaki</option>
+                    <option value="select">Kyoto</option>
+                    <option value="select">Yokahama</option>
                     <option value="select">Osaka</option>
                 </select>
 
@@ -58,6 +61,7 @@ const Homepage = () => {
                     <option value="select">No. of Guests</option>
                     <option value="select">1</option>
                     <option value="select">2</option>
+                    <option value="select">specify</option>
                 </select>
 
            </div>
