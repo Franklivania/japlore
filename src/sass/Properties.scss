@@ -41,6 +41,9 @@ $sub-font: 'Poppins', sans-serif;
 
                 .at{
                     color: rgba(($color-text), 0.5);
+                    background: none;
+                    border: none;
+                    outline: none;
 
                     &:hover{
                         color: rgba(($color-text), 1);
@@ -68,6 +71,7 @@ $sub-font: 'Poppins', sans-serif;
 
             li{
                 margin: 0 0 1.5rem 0;
+
                 .at{
                     text-decoration: none;
                     color: rgba(($color-text), 0.5);
@@ -158,6 +162,10 @@ $sub-font: 'Poppins', sans-serif;
                 .fa-heart{
 
                     &:hover{
+                        color: $color-sub;
+                    }
+
+                    &:focus{
                         color: $color-sub;
                     }
                 }

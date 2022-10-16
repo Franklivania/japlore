@@ -17,3 +17,26 @@ $color-text: #FFFFFF;
 
 $font-main: 'Inter', sans-serif;
 $sub-font: 'Poppins', sans-serif;
+
+
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background: $main-color;
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgba(($color-text), 0.2);
+  border-radius: 5rem;
+
+  &:hover{
+    background: rgba(($color-text), 0.8);
+  }
+
+  &:active{
+    background: rgba(($color-text), 0.8);
+  }
+}

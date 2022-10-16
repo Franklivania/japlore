@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+$main-color: #000000;
+$color-sub: #FFB800;
+$color-text: #FFFFFF;
+
+$font-main: 'Inter', sans-serif;
+$sub-font: 'Poppins', sans-serif;
+
+.blog{
+    width: 100%;
+    height: 100vh;
+    background: $main-color;
+
+    .blog-top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1.5rem;
+        color: $color-text;
+        font-family: $font-main;
+    
+        .move{
+            display: flex;
+            align-items: center;
+    
+            .moves{
+                border-bottom: 0.2rem $color-text solid;
+                padding: 0 0.5rem;
+                margin: 0 0.5rem;
+    
+                .at{
+                    color: rgba(($color-text), 0.5);
+                    background: transparent;
+                    outline: none;
+                    border: none;
+    
+                    &:hover{
+                        color: rgba(($color-text), 1);
+                    }
+                }
+            }
+        }
+    }
+    
+    .blog-list{
+        align-items: center;
+        margin: 2rem 0;
+    
+        ul{
+            display: flex;
+            justify-content: center;
+            justify-items: space-around;
+            list-style: none;
+            font-size: 1.4rem;
+            font-weight: 300;
+            font-family: $sub-font;
+
+            li{
+                margin: 0 0.6rem;
+                padding: 0.5rem 1rem;
+
+                &:hover{
+                    border-bottom: 0.02rem $color-text solid;
+                }
+
+                .link{
+                    text-decoration: none;
+                    color: rgba(($color-text), 0.5);
+
+                    &:hover{
+                        color: rgba(($color-text), 1);
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .blogs{
+
+        .tour, .life, .accomodation, .transportation, .tours{
+            color: $color-sub;
+        }
+    }
+
+}

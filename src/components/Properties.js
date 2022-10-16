@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import { Link } from 'react-router-dom'
 import '../sass/Properties.scss'
 import Right from '../Images/right-arrow.png'
@@ -48,15 +48,16 @@ const Properties = () => {
     const [cottages, setCottages] = useState(false);
     const [resorts, setResort] = useState(false);
 
-    // $(".nav-left li a").click(function(){
-    //     if(!($(this).has("active"))){
-    //         $(".nav-left li a.active").removeClass("active");
-    //         $(this).addClass("active");
-    //     }
+    // });
+    // document.querySelector(".fa-hearts").addEventListerner("OnClick", () => {
+    //     document.querySelector(".fa-hearts").ClassList.add("#FFB800");
     // });
 
-
-    
+    const btnRef = useRef(true);
+    const onChangeColor = () => {
+        btnRef.current.classList.add("#FFB800");
+        console.log("this works");
+    };
 
   return (
     <div className='properties'>
@@ -68,11 +69,11 @@ const Properties = () => {
             <div className="move">
 
                 <div className="moves left">
-                <Link to="/" className='at' id='left'> <i class="fa-solid fa-arrow-left fa-3x"></i> </Link>
+                <button type='button' className='at' id='left'> <i class="fa-solid fa-arrow-left fa-3x"></i> </button>
                 </div>
 
                 <div className="moves right">
-                <Link to="/" className='at' id='right'><i class="fa-solid fa-arrow-right fa-3x"></i></Link>
+                <button type='button' className='at' id='right'><i class="fa-solid fa-arrow-right fa-3x"></i></button>
                 </div>
 
             </div>
@@ -180,7 +181,7 @@ const Properties = () => {
                             <div className="container"> 
 
                                 <div className="wish">
-                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-heart" onClick={onChangeColor} ref={btnRef}></i>
                                 </div>
 
                                 <div className="prop-text">
