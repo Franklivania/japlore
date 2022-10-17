@@ -11,7 +11,6 @@ $sub-font: 'Poppins', sans-serif;
 
 .blog{
     width: 100%;
-    height: 100vh;
     background: $main-color;
 
     .blog-top{
@@ -75,6 +74,10 @@ $sub-font: 'Poppins', sans-serif;
                         color: rgba(($color-text), 1);
                     }
                 }
+
+                .link-change{
+                    color: $color-text;
+                }
                 
             }
         }
@@ -83,8 +86,95 @@ $sub-font: 'Poppins', sans-serif;
     .blogs{
 
         .tour, .life, .accomodation, .transportation, .tours{
-            color: $color-sub;
+            color: rgba(($color-text), 0.5);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            height: 27rem;
+            width: 160%;
+            font-family: $sub-font;
+            // border: 0.02rem $color-sub solid;
+
+            .card{
+                position: relative;
+                height: 25rem;
+                width: 120%;
+                margin: 0 1rem;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .container{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background: radial-gradient(
+                        circle,
+                        rgba(($main-color),0.3),
+                        rgba(($main-color),0.5)
+                    );
+
+                    .text{
+                        position: absolute;
+                        display: grid;
+                        place-items: center;
+                        text-align: center;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        font-family: $font-main;
+                        h2{
+                            font-size: 2.5rem;
+                        }
+
+                        &:hover{
+                            opacity: 1;
+                            animation: moveIn 0.5s linear;
+                        }
+
+                        @keyframes moveIn {
+                            0%{
+                                transform: translateX(-0.5rem);
+                                opacity: 0;
+                            }
+                            50%{
+                                transform: translateX(-0.2rem);
+                                opacity: 0.5;
+                            }
+                            100%{
+                                transform: translateX(0);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                }
+            }
         }
     }
+    h3{
+        font-weight: 400;
+        font-size: 1.6rem;
+        padding: 2rem 1rem;
 
+        a{
+            display: flex;
+            align-items: center;
+            color: $color-sub;
+            text-decoration: none;
+
+            img{
+                padding: 0.35rem 0 0 0;
+                margin-left: 0.4rem;
+            }
+        }
+    }
 }

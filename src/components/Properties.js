@@ -39,14 +39,7 @@ import Resort4 from '../Images/resort4.jpg'
 
 const Properties = () => {
 
-    const [motels, setToggle] = useState(true);
-    const [hotels, setHotels] = useState(false);
-    const [apartments, setApartments] = useState(false);
-    const [hostels, setHostels] = useState(false);
-    const [sharedHomes, setSharedHomes] = useState(false);
-    const [tents, setTents] = useState(false);
-    const [cottages, setCottages] = useState(false);
-    const [resorts, setResort] = useState(false);
+    const [tabIndex, setTabIndex] = useState(1);
 
     // });
     // document.querySelector(".fa-hearts").addEventListerner("OnClick", () => {
@@ -84,86 +77,14 @@ const Properties = () => {
 
             <nav className="left-nav">
                 <ul className="nav-left">
-                    <li><Link to='' className="at" onClick={() => {
-                        setToggle(!motels);
-                        setHotels(false);
-                        setApartments(false);
-                        setHostels(false);
-                        setSharedHomes(false);
-                        setTents(false);
-                        setCottages(false);
-                        setResort(false);
-                        }}>Motels</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(!hotels);
-                        setApartments(false);
-                        setHostels(false);
-                        setSharedHomes(false);
-                        setTents(false);
-                        setCottages(false);
-                        setResort(false);
-                        }}>Hotels</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(false);
-                        setApartments(!apartments);
-                        setHostels(false);
-                        setSharedHomes(false);
-                        setTents(false);
-                        setCottages(false);
-                        setResort(false);
-                        }}>Apartments</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(false);
-                        setApartments(false);
-                        setHostels(!hostels);
-                        setSharedHomes(false);
-                        setTents(false);
-                        setCottages(false);
-                        setResort(false);
-                        }}>Hostels</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(false);
-                        setApartments(false);
-                        setHostels(false);
-                        setSharedHomes(!sharedHomes);
-                        setTents(false);
-                        setCottages(false);
-                        setResort(false);
-                        }}>Shared Homes</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(false);
-                        setApartments(false);
-                        setHostels(false);
-                        setSharedHomes(false);
-                        setTents(!tents);
-                        setCottages(false);
-                        setResort(false);
-                        }}>Tents</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(false);
-                        setApartments(false);
-                        setHostels(false);
-                        setSharedHomes(false);
-                        setTents(false);
-                        setCottages(!cottages);
-                        setResort(false);
-                        }}>Cottages</Link></li>
-                    <li><Link to='' className="at" onClick={ () => {
-                        setToggle(false);
-                        setHotels(false);
-                        setApartments(false);
-                        setHostels(false);
-                        setSharedHomes(false);
-                        setTents(false);
-                        setCottages(false);
-                        setResort(!resorts);
-                        }}>Resorts</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 1 ? 'at-color':'')} onClick={() => {setTabIndex(1);}}>Motels</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 2 ? 'at-color':'')} onClick={() => {setTabIndex(2);}}>Hotels</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 3 ? 'at-color':'')} onClick={() => {setTabIndex(3);}}>Apartments</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 4 ? 'at-color':'')} onClick={() => {setTabIndex(4);}}>Hostels</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 5 ? 'at-color':'')} onClick={() => {setTabIndex(5);}}>Shared Homes</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 6 ? 'at-color':'')} onClick={() => {setTabIndex(6);}}>Tents</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 7 ? 'at-color':'')} onClick={() => {setTabIndex(7);}}>Cottages</Link></li>
+                    <li><Link to='' className={'at ' + (tabIndex === 8 ? 'at-color':'')} onClick={() => {setTabIndex(8);}}>Resorts</Link></li>
                 </ul>
 
                 <p>View all<Link to='' className="at"><img src={Right} alt="" /></Link></p>
@@ -171,7 +92,7 @@ const Properties = () => {
 
             <div className="prop-places">
 
-                {motels && (
+                {tabIndex === 1 && (
                     <div className="motels" id="motels">
 
                         <div className="card">
@@ -417,7 +338,7 @@ const Properties = () => {
                     </div>
                 )}
 
-                {hotels && (
+                {tabIndex === 2 && (
 
                     <div className="hotels" id="hotels">
 
@@ -576,7 +497,7 @@ const Properties = () => {
 
                 )}
 
-                {apartments && (
+                {tabIndex === 3 && (
 
                 <div className="apartments" id="apartments">
 
@@ -734,7 +655,7 @@ const Properties = () => {
 
                 )}
 
-                {hostels && (
+                {tabIndex === 4 && (
 
                 <div className="hostels" id="hostels">
 
@@ -863,7 +784,7 @@ const Properties = () => {
 
                 )}
 
-                {sharedHomes && (
+                {tabIndex === 5 && (
 
                 <div className="sharedHomes" id="sharedHomes">
 
@@ -1022,7 +943,7 @@ const Properties = () => {
 
                 )}
 
-                {tents && (
+                {tabIndex === 6 && (
 
                 <div className="tents" id="tents">
 
@@ -1181,7 +1102,7 @@ const Properties = () => {
 
                 )}
 
-                {cottages && (
+                {tabIndex === 7 && (
 
                 <div className="cottages" id="cottages">
 
@@ -1339,7 +1260,7 @@ const Properties = () => {
 
                 )}
 
-                {resorts && (
+                {tabIndex === 8 && (
 
                 <div className="resorts" id="resorts">
 

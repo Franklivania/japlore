@@ -7,7 +7,7 @@ import Properties from '../components/Properties'
 
 const Landing = () => {
   return (
-    <div>
+    <div className='Landing'>
 
         <Homepage/>
 

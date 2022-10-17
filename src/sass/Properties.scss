@@ -76,19 +76,14 @@ $sub-font: 'Poppins', sans-serif;
                     text-decoration: none;
                     color: rgba(($color-text), 0.5);
 
-                    &:link{
-                        color: rgba(($color-text), 0.5);
-                    }
-                    &:visited{
-                        color: rgba(($color-text), 1);
-                    }
                     &:hover{
                         color: rgba(($color-text), 1);
                         margin: 0 0 2rem 0;
                     }
-                    &:active{
-                        color: rgba(($color-text), 1);
-                    }
+                }
+                
+                .at-color{
+                    color: $color-text; 
                 }
                 
             }
