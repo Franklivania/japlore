@@ -22,11 +22,20 @@ import Home from '../Images/Blog/home.webp'
 import Hostel from '../Images/Blog/hostel.jpg'
 import Resort from '../Images/Blog/resort.webp'
 import Tent from '../Images/Blog/tent.jpg'
-import Images from './Transportation.json'
+import Bullet from '../Images/Blog/bullet.jpg'
+import Plane from '../Images/Blog/plane.jpg'
+import Train from '../Images/Blog/train.jpg'
+import Highbus from '../Images/Blog/highbuss.jpg'
+import Subway from '../Images/Blog/subway.jpg'
+import Citybus from '../Images/Blog/citybus.jpg'
+import Cabs from '../Images/Blog/cabs.jpg'
+import Ferry from '../Images/Blog/ferry.jpg'
+import Bicycle from '../Images/Blog/bicycle.jpg'
 
 const Blog = () => {
 
     const [tabIndex, setTabIndex] = useState(1);
+    const [colorChange, setColorChange] = useState(true);
 
 
     const elementRef = useRef(null);
@@ -287,7 +296,86 @@ const Blog = () => {
             {
                 tabIndex === 4 && (
                     <div className='transportation' id='transportation' ref={elementRef}>
-                        
+                        <div className="card">
+                            <img src={Bullet} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Shinkansen <br /> (Bullet Trains) </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Plane} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Airplanes</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Train} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Trains </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Highbus} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>High Buses</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Subway} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Subways</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Citybus} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>City Buses</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Cabs} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Cabs</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Ferry} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Ferries</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Bicycle} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Bicycles</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 )
             }
