@@ -389,7 +389,7 @@ const Blog = () => {
 
         </div>
 
-        <h3><a href="/">Read more <img src={Right} alt="" /></a></h3>
+        <h3><a href="/">Read full blog <img src={Right} alt="" /></a></h3>
 
     </div>
   )

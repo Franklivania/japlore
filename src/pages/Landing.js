@@ -5,6 +5,7 @@ import Homepage from '../components/Homepage'
 import Places from '../components/Places'
 import Properties from '../components/Properties'
 import Search from '../components/Search'
+import Footer from '../components/Footer'
 // import { useState } from 'react'
 
 const Landing = () => {
@@ -33,6 +34,8 @@ const Landing = () => {
         <Blog/>
 
         <Search/>
+
+        <Footer/>
 
     </div>
   )
