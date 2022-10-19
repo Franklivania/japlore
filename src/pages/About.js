@@ -14,10 +14,10 @@ const About = () => {
 
         <section>
             <p>
-                Japlore exists as a way to make easier a place to go to know what you would encounter when you come to Japan.
-                It is as a result of times spent, understanding the culture, and putting material together that would make you to 
-                ease in easily, find you way around, and integerate seamlessly with the culture you find your self in. <br />
-                In this era of social integeration, it is paramount we respect each persons views, and their background, so we can be able
+                Japlore exists as a way to make easier a place to go, to know what you would encounter when you come to Japan.
+                It is as a result of times spent, understanding the culture and putting material together that would make you to 
+                fit in easily, find you way around and integrate seamlessly with the culture you find yourself in. <br />
+                In this era of social integration, it is paramount we respect each person's views and their background, so we can be able
                 to enjoy the activities of the country better. 
                 <br />
                 <br />
@@ -31,7 +31,7 @@ const About = () => {
 
                 Be it vacation, work migration, studies, or change of living atmosphere, we got you covered, as you can find anything you want from the click of a button. <br />
 
-                Cheers, and welcome to japan! 
+                Cheers, and welcome to Japan! 
             </p>
         </section>
 

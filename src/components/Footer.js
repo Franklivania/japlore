@@ -19,7 +19,7 @@ const Footer = () => {
                     <li><Link to='/' className='links'>Home</Link></li>
                     <li><Link to='' className='links'>Blog</Link></li>
                     <li><Link to='/about' className='links' target='_blank' >About</Link></li>
-                    <li><Link to='' className='links'>Contact</Link></li>
+                    <li><Link to='/contact' className='links' target='_blank' >Contact</Link></li>
                     <li><Link to='' className='links'>Categories</Link></li>
                 </ul>
             </div>
@@ -49,6 +49,10 @@ const Footer = () => {
                 <option value="country">English</option>
                 <option value="country">Japanese</option>
             </select>
+        </div>
+
+        <div className="own">
+            <p>Copyright @ Jap <span>Lore</span> 2022. &nbsp; All rights reserved</p>
         </div>
     </div>
   )
