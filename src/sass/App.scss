@@ -39,3 +39,44 @@ $sub-font: 'Poppins', sans-serif;
     background: rgba(($color-text), 0.8);
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .alert{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1023px) {
+
+  .main{
+    display: none;
+  }
+
+  .alert{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: $main-color;
+    font-family: $sub-font;
+
+    .message{
+      width: 80%;
+      padding: 5% 3%;
+      border: none;
+      border-left: 0.02rem $color-sub solid;
+      border-bottom: 0.02rem $color-sub solid;
+      color: $color-text;
+      font-size:2rem;
+      font-weight: 500;
+      text-align: center;
+
+      i{
+        color: $color-sub;
+      }
+    }
+  }
+
+}

@@ -31,6 +31,14 @@ import Citybus from '../Images/Blog/citybus.jpg'
 import Cabs from '../Images/Blog/cabs.jpg'
 import Ferry from '../Images/Blog/ferry.jpg'
 import Bicycle from '../Images/Blog/bicycle.jpg'
+import Hiking from '../Images/Blog/hiking.jpg'
+import Mountain from '../Images/Blog/mountainclimbing.jpg'
+import Shrine from '../Images/Blog/shrine.jpg'
+import Museum from '../Images/Blog/museum.jpg'
+import Theme from '../Images/Blog/theme.jpg'
+import Zen from '../Images/Blog/zen.jpg'
+import Rope from '../Images/Blog/rope.jpg'
+import Castle from '../Images/Blog/castle.jpg'
 
 const Blog = () => {
 
@@ -382,7 +390,79 @@ const Blog = () => {
             {
                 tabIndex === 5 && (
                     <div className='tours' id='tours'>
-                        <h3>5th facility</h3>
+
+                        <div className="card">
+                            <img src={Hiking} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Hiking</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Mountain} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Mountain Climbing</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Shrine} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Shrines</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Museum} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Museums</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Zen} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Zen Gardens</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Theme} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Theme Parks</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Rope} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Rope ways</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card">
+                            <img src={Castle} alt="" />
+                            <div className="container">
+                                <div className="text">
+                                    <h2>Osaska Castle</h2>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 )
             }
