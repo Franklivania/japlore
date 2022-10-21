@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import '../sass/Properties.scss'
 import Right from '../Images/right-arrow.png'
@@ -40,19 +40,7 @@ import Resort4 from '../Images/resort4.jpg'
 const Properties = () => {
 
     const [tabIndex, setTabIndex] = useState(1);
-    const [colorChange, setColorChange] = useState(false);
-
-    const handleClick = () => {
-        setColorChange(current => !current);
-    }
-
-
-    const btnRef = useRef(true);
-    const onChangeColor = () => {
-        btnRef.current.classList.add("#FFB800");
-        console.log("this works");
-    };
-
+    const [colorChange, setColorChange] = useState(0);
   return (
     <div className='properties'>
 
@@ -102,7 +90,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -132,7 +120,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -162,7 +150,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -192,7 +180,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -222,7 +210,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -252,7 +240,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 6 ? 'wish-color':'')} onClick={() => {setColorChange(6);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -282,7 +270,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 7 ? 'wish-color':'')} onClick={() => {setColorChange(7);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -312,7 +300,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" style={{backgroundColor: colorChange ? '' : '',color: colorChange ? '#FFB800' : '',}}onClick={handleClick}>
+                                <div className={'wish ' + (colorChange === 8 ? 'wish-color':'')} onClick={() => {setColorChange(8);}}>
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -349,7 +337,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" >
+                                <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -379,7 +367,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" >
+                                <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -409,7 +397,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" >
+                                <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -439,7 +427,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" >
+                                <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -469,7 +457,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className="wish" >
+                                <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -508,7 +496,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -538,7 +526,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -568,7 +556,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -598,7 +586,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -627,7 +615,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -666,7 +654,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -696,7 +684,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -726,7 +714,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -756,7 +744,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -795,7 +783,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -825,7 +813,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -855,7 +843,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -885,7 +873,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -915,7 +903,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -954,7 +942,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -984,7 +972,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1014,7 +1002,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1044,7 +1032,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1074,7 +1062,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1113,7 +1101,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1142,7 +1130,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1172,7 +1160,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1202,7 +1190,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1232,7 +1220,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1271,7 +1259,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1300,7 +1288,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1329,7 +1317,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1358,7 +1346,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1387,7 +1375,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className="wish">
+                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
