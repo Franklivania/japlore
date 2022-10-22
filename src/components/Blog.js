@@ -43,7 +43,7 @@ import Castle from '../Images/Blog/castle.jpg'
 const Blog = () => {
 
     const [tabIndex, setTabIndex] = useState(1);
-    const [colorChange, setColorChange] = useState(true);
+    // const [colorChange, setColorChange] = useState(true);
 
 
     const elementRef = useRef(null);
