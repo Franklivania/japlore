@@ -10,21 +10,9 @@ import Footer from '../components/Footer'
 
 const Landing = () => {
 
-  // const [datas, setDatas] = useState ([
-  //   { name: 'Daniel', age: 25,  id: 1},
-  //   { name: 'John', age: 24, id: 2 },
-  //   { name: 'Jen', age: 31, id: 3 }
-  // ]);
-
   return (
     <div className='Landing'>
-
-      {/* {datas.map((data) => (
-        <ul key={data.id}>
-          <li>{ data.name} { data.age }</li>
-        </ul>
-      ))} */}
-
+      
         <Homepage/>
 
         <Places/>

@@ -41,6 +41,14 @@ const Properties = () => {
 
     const [tabIndex, setTabIndex] = useState(1);
     const [colorChange, setColorChange] = useState(0);
+    const [hotelChange, setHotelChange] = useState(0);
+    const [apartChange, setApartChange] = useState(0);
+    const [hostelChange, setHostelChange] = useState(0);
+    const [sharedChange, setSharedChange] = useState(0);
+    const [tentsChange, setTentsChange] = useState(0);
+    const [cottagesChange, setCottagesChange] = useState(0);
+    const [resortsChange, setResortsChange] = useState(0);
+    
   return (
     <div className='properties'>
 
@@ -337,7 +345,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}} >
+                                <div className={'wish ' + (hotelChange === 1 ? 'wish-color':'')} onClick={() => {setHotelChange(1);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -367,7 +375,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}} >
+                                <div className={'wish ' + (hotelChange === 2 ? 'wish-color':'')} onClick={() => {setHotelChange(2);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -397,7 +405,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}} >
+                                <div className={'wish ' + (hotelChange === 3 ? 'wish-color':'')} onClick={() => {setHotelChange(3);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -427,7 +435,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}} >
+                                <div className={'wish ' + (hotelChange === 4 ? 'wish-color':'')} onClick={() => {setHotelChange(4);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -457,7 +465,7 @@ const Properties = () => {
 
                             <div className="container"> 
 
-                                <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}} >
+                                <div className={'wish ' + (hotelChange === 5 ? 'wish-color':'')} onClick={() => {setHotelChange(5);}} >
                                     <i class="fa-solid fa-heart"></i>
                                 </div>
 
@@ -496,7 +504,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
+                            <div className={'wish ' + (apartChange === 1 ? 'wish-color':'')} onClick={() => {setApartChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -526,7 +534,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
+                            <div className={'wish ' + (apartChange === 2 ? 'wish-color':'')} onClick={() => {setApartChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -556,7 +564,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
+                            <div className={'wish ' + (apartChange === 3 ? 'wish-color':'')} onClick={() => {setApartChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -586,7 +594,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
+                            <div className={'wish ' + (apartChange === 4 ? 'wish-color':'')} onClick={() => {setApartChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -615,7 +623,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
+                            <div className={'wish ' + (apartChange === 5 ? 'wish-color':'')} onClick={() => {setApartChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -654,7 +662,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
+                            <div className={'wish ' + (hostelChange === 1 ? 'wish-color':'')} onClick={() => {setHostelChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -684,7 +692,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
+                            <div className={'wish ' + (hostelChange === 2 ? 'wish-color':'')} onClick={() => {setHostelChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -714,7 +722,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
+                            <div className={'wish ' + (hostelChange === 3 ? 'wish-color':'')} onClick={() => {setHostelChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -744,7 +752,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
+                            <div className={'wish ' + (hostelChange === 4 ? 'wish-color':'')} onClick={() => {setHostelChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -783,7 +791,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
+                            <div className={'wish ' + (sharedChange === 1 ? 'wish-color':'')} onClick={() => {setSharedChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -813,7 +821,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
+                            <div className={'wish ' + (sharedChange === 2 ? 'wish-color':'')} onClick={() => {setSharedChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -843,7 +851,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
+                            <div className={'wish ' + (sharedChange === 3 ? 'wish-color':'')} onClick={() => {setSharedChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -873,7 +881,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
+                            <div className={'wish ' + (sharedChange === 4 ? 'wish-color':'')} onClick={() => {setSharedChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -903,7 +911,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
+                            <div className={'wish ' + (sharedChange === 5 ? 'wish-color':'')} onClick={() => {setSharedChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -942,7 +950,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
+                            <div className={'wish ' + (tentsChange === 1 ? 'wish-color':'')} onClick={() => {setTentsChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -972,7 +980,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
+                            <div className={'wish ' + (tentsChange === 2 ? 'wish-color':'')} onClick={() => {setTentsChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1002,7 +1010,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
+                            <div className={'wish ' + (tentsChange === 3 ? 'wish-color':'')} onClick={() => {setTentsChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1032,7 +1040,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
+                            <div className={'wish ' + (tentsChange === 4 ? 'wish-color':'')} onClick={() => {setTentsChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1062,7 +1070,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
+                            <div className={'wish ' + (tentsChange === 5 ? 'wish-color':'')} onClick={() => {setTentsChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1101,7 +1109,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
+                            <div className={'wish ' + (cottagesChange === 1 ? 'wish-color':'')} onClick={() => {setCottagesChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1130,7 +1138,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
+                            <div className={'wish ' + (cottagesChange === 2 ? 'wish-color':'')} onClick={() => {setCottagesChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1160,7 +1168,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
+                            <div className={'wish ' + (cottagesChange === 3 ? 'wish-color':'')} onClick={() => {setCottagesChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1190,7 +1198,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
+                            <div className={'wish ' + (cottagesChange === 4 ? 'wish-color':'')} onClick={() => {setCottagesChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1220,7 +1228,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
+                            <div className={'wish ' + (cottagesChange === 5 ? 'wish-color':'')} onClick={() => {setCottagesChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1259,7 +1267,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 1 ? 'wish-color':'')} onClick={() => {setColorChange(1);}}>
+                            <div className={'wish ' + (resortsChange === 1 ? 'wish-color':'')} onClick={() => {setResortsChange(1);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1288,7 +1296,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 2 ? 'wish-color':'')} onClick={() => {setColorChange(2);}}>
+                            <div className={'wish ' + (resortsChange === 2 ? 'wish-color':'')} onClick={() => {setResortsChange(2);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1317,7 +1325,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 3 ? 'wish-color':'')} onClick={() => {setColorChange(3);}}>
+                            <div className={'wish ' + (resortsChange === 3 ? 'wish-color':'')} onClick={() => {setResortsChange(3);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1346,7 +1354,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 4 ? 'wish-color':'')} onClick={() => {setColorChange(4);}}>
+                            <div className={'wish ' + (resortsChange === 4 ? 'wish-color':'')} onClick={() => {setResortsChange(4);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
@@ -1375,7 +1383,7 @@ const Properties = () => {
 
                         <div className="container"> 
 
-                            <div className={'wish ' + (colorChange === 5 ? 'wish-color':'')} onClick={() => {setColorChange(5);}}>
+                            <div className={'wish ' + (resortsChange === 5 ? 'wish-color':'')} onClick={() => {setResortsChange(5);}}>
                                 <i class="fa-solid fa-heart"></i>
                             </div>
 
