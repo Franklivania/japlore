@@ -39,11 +39,11 @@ import Theme from '../Images/Blog/theme.jpg'
 import Zen from '../Images/Blog/zen.jpg'
 import Rope from '../Images/Blog/rope.jpg'
 import Castle from '../Images/Blog/castle.jpg'
+import { Slider } from 'slider'
 
 const Blog = () => {
 
     const [tabIndex, setTabIndex] = useState(1);
-    // const [colorChange, setColorChange] = useState(true);
 
 
     const elementRef = useRef(null);
@@ -63,7 +63,7 @@ const Blog = () => {
             setArrowDisable(false);
         }
         }, speed);
-    };
+     };
 
   return (
     
@@ -113,7 +113,7 @@ const Blog = () => {
             {
                 tabIndex === 1 && (
                     <div className='tour' id='tour' ref={elementRef}>
-
+                            
                         <div className="card">
                             <img src={Tokyo} alt="" />
                             <div className="container">
@@ -182,7 +182,7 @@ const Blog = () => {
             }
             {
                 tabIndex === 2 && (
-                    <div className='life' id='life' ref={elementRef}>
+                    <div className='life' id='life' >
                         <div className="card">
                             <img src={Night} alt="" />
                             <div className="container">
@@ -241,7 +241,7 @@ const Blog = () => {
             }
             {
                 tabIndex === 3 && (
-                    <div className='accomodation' id='accomodation' ref={elementRef}>
+                    <div className='accomodation' id='accomodation' >
                         <div className="card">
                             <img src={Hotel} alt="" />
                             <div className="container">
@@ -303,7 +303,7 @@ const Blog = () => {
             }
             {
                 tabIndex === 4 && (
-                    <div className='transportation' id='transportation' ref={elementRef}>
+                    <div className='transportation' id='transportation' >
                         <div className="card">
                             <img src={Bullet} alt="" />
                             <div className="container">
