@@ -20,7 +20,7 @@
 
 <p style="text-decoration: underline">Other features of the app are still in progress, but you can view the live site here;</p>
 
-<a href="https://japlore.netlify.app/">Japlore site</a>
+<a href="https://japlore.vercel.app/">Japlore site</a>
 
 ### This site was developed using
 
