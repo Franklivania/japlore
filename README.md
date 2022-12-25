@@ -34,3 +34,35 @@
 
 <p><a href="https://github.com/Franklivania"><span>Chibuzo Franklin Odigbo:</span></a> Developer</p>
 <p><a href="https://www.behance.net/debaedoma"><span>Deba Edoma:</span></a> Designer</p>
+
+## For open source contributions
+
+<p>
+    This website was built with "npx-create-react-app".
+</p>
+
+<p>
+    To work on this webiste, clone it using;
+
+    ```
+    git clone https://github.com/Franklivania/japlore.git
+    ```
+</p>
+
+Install the node modules by doing;
+
+```
+npm install node-modules
+```
+inside the application directory.
+
+When you are done, run
+
+```
+npm start
+```
+
+This would open a server on your localhost.
+
+<i>All rights reserved, you can clone or fork this repository to make any changes to it. But you must commit to your branch and not push to the master</i>
+
