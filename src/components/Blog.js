@@ -1,5 +1,10 @@
 import React, {useState, useRef} from 'react'
 import { Link } from 'react-router-dom'
+import {Swiper, SwiperSlide, SwiperSlides} from 'swiper/react' 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Pagination, Navigation } from 'swiper'
 import '../sass/Blog.scss'
 import Right from '../Images/right-arrow.png'
 import Tokyo from '../Images/Blog/tokyo.jpg'
@@ -46,7 +51,7 @@ const Blog = () => {
     const [tabIndex, setTabIndex] = useState(1);
 
 
-    const elementRef = useRef(null);
+    const ref = useRef(null);
     const [arrowDisable, setArrowDisable] = useState(true);
 
     const handleHorizontalScroll = (element, speed, distance, step) => {
@@ -77,7 +82,7 @@ const Blog = () => {
                 <div className="moves left">
                     <button className='at'
                         onClick={() => {
-                            handleHorizontalScroll(elementRef.current, 25, 100, -10);
+                            handleHorizontalScroll(ref.current, 25, 100, -10);
                         }}
                         disabled={arrowDisable}
                         >
@@ -88,7 +93,7 @@ const Blog = () => {
                 <div className="moves right">
                     <button className='at'
                         onClick={() => {
-                            handleHorizontalScroll(elementRef.current, 25, 100, 10);
+                            handleHorizontalScroll(ref.current, 25, 100, 10);
                         }}
                         >
                         <i class="fa-solid fa-arrow-right fa-3x"></i>
@@ -112,7 +117,7 @@ const Blog = () => {
 
             {
                 tabIndex === 1 && (
-                    <div className='tour' id='tour' ref={elementRef}>
+                    <div className='tour' id='tour' ref={ref}>
                             
                         <div className="card">
                             <img src={Tokyo} alt="" />

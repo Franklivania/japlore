@@ -84,6 +84,7 @@ $sub-font: 'Poppins', sans-serif;
     }
 
     .blogs{
+        overflow: hidden;
 
         .tour, .life, .accomodation, .transportation, .tours{
             color: rgba(($color-text), 0.5);
