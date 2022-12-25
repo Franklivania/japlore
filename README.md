@@ -5,7 +5,6 @@
 
 <p>
     Japlore is a site made to ease your integration into the japanese way of life easier and better. <br>
-
     It offers a list of places that can be found in Japan, and it's interesting sights that would be fit for a tourist or migrant coming over for the first time
 </p>
 
@@ -33,5 +32,5 @@
 
 ### This site is brought to you by
 
-<p><span>Chibuzo Franklin Odigbo:</span> Developer</p>
+<p><a href="https://github.com/Franklivania"><span>Chibuzo Franklin Odigbo:</span></a> Developer</p>
 <p><a href="https://www.behance.net/debaedoma"><span>Deba Edoma:</span></a> Designer</p>
